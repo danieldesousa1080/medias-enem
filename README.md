@@ -6,8 +6,10 @@ O objetivo deste projeto é calcular médias do Enem de maneira precisa. O proje
 
 As imagens não são de minha autoria, foram obtidas através dos sites [Freepik](https://freepik.com) e [Icons8](https://icons8.com/).
 
-[![](./svg/professor.svg)](https://br.freepik.com/fotos-vetores-gratis/sociedade)
+[Imagem Professor](https://br.freepik.com/fotos-vetores-gratis/sociedade)
 
-[![](./svg/professora.svg)](https://br.freepik.com/fotos-vetores-gratis/dia-dos-professor)
+[Imagem Professora](https://br.freepik.com/fotos-vetores-gratis/dia-dos-professor)
 
-[![](./svg/github_icon.svg)](https://icons8.com/icon/12599/github)
+[Logo Github](https://icons8.com/icon/12599/github)
+
+![Screenshot 1](screenshot1.png)
