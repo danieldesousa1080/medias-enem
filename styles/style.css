@@ -14,6 +14,7 @@ body {
     align-items: center;
     overflow-y: hidden;
     overflow-x: hidden;
+    transition: .7s ease;
 }
 
 h1 {
@@ -33,6 +34,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .7s ease;
 }
 
 .content {
@@ -71,4 +73,18 @@ main {
     top: 42%;
     position: absolute;
     width: 12%;
+}
+
+.fade-out {
+    animation: fadeout .7s ease;
+}
+
+
+@keyframes fadeout {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    }
 }
