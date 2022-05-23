@@ -1,22 +1,21 @@
 let startButton = document.querySelector('.btn-start')
 let body = document.body
-let content = document.querySelector('.content')
-let main = document.querySelector('.default-layout')
-let character = document.querySelector('.character')
+let firstScreen = document.querySelector('.first-screen')
+let main = document.querySelector('main')
 
-let screen1Content = [content,character]
+let form = document.querySelector('.form')
+let noteWeight = [".Ling-P",".Hum-P",".Nat-P",".Mat-P",".Red-P"]
+let noteValue = [".Ling-N",".Hum-N",".Nat-N",".Mat-N",".Red-N"]
+let result = document.querySelector('.result')
 
 startButton.addEventListener("click",()=>{
     body.style.backgroundColor = '#F7BF42'
-    content.classList.add("fade-out")
     main.style.backgroundColor ='#DE8327'
-    character.classList.add("fade-out")
+    // firstScreen.style.display = 'none'
+    firstScreen.classList.add('fade-out')
+    disappear(firstScreen)
+    form.style.display = 'flex'
 })
-
-screen1Content.forEach((item)=>{
-    disappear(item)
-})
-
 
 function disappear (x) {
     x.addEventListener("animationend",(ev)=>{
@@ -25,4 +24,14 @@ function disappear (x) {
         };
     },false
     )  
+}
+
+function calculate(){
+    let TotalNotes = 0
+    let TotalWeights = 0
+    for (item in noteWeight){
+        TotalNotes += document.querySelector(noteWeight[item]).value * document.querySelector(noteValue[item]).value
+        TotalWeights += parseInt(document.querySelector(noteWeight[item]).value)
+    }
+    result.innerHTML = "Sua nota é " + (TotalNotes/TotalWeights).toFixed(2)
 }

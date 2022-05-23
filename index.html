@@ -9,17 +9,60 @@
     <link rel="stylesheet" href="./styles/fonts.css">
 </head>
 <body>
-    <main class="default-layout">
-        <div class="content">
-            <div class="text">
-                <h2>Olá,</h2>
-                <h1>Clique no botão abaixo para começar!</h1>
+    <main>
+        <!-- first-screen content -->
+        <div class="first-screen">
+            <div class="content">
+                <div class="text">
+                    <h2>Olá,</h2>
+                    <h1>Clique no botão abaixo para começar!</h1>
+                </div>
+                <button class="btn-start">Calcular minha nota</button>
+                <a href="#"><img class="link" src="./svg/github_icon.svg" alt="link github"></a>
             </div>
-            <button class="btn-start">Calcular minha nota</button>
-            <a href="#"><img class="link" src="./svg/github_icon.svg" alt="link github"></a>
+            <img class="character" src="./svg/professor.svg" alt="imagem professor">
+        </div>
+        <!-- second-screen content -->
+        <div class="form">
+            <table>
+                <tr class="header">
+                    <td>Area de conhecimento</td>
+                    <td>Peso</td>
+                    <td>Nota</td>
+                </tr>
+                <tr>
+                    <td>Códigos e Linguagens</td>
+                    <td><input type="number" class="Ling-P" min="0" max="4" step=".5"></td>
+                    <td><input type="number" class="Ling-N" min="0" max="1000"></td>
+                </tr>
+                <tr>
+                    <td>Ciências Humanas</td>
+                    <td><input type="number" class="Hum-P"  min="0" max="4" step=".5"></td>
+                    <td><input type="number" class="Hum-N"  min="0" max="1000"></td>
+                </tr>
+                <tr>
+                    <td>Ciências da Natureza</td>
+                    <td><input type="number" class="Nat-P" min="0" max="4" step=".5"></td>
+                    <td><input type="number" class="Nat-N" min="0" max="1000"></td>
+                </tr>
+                <tr>
+                    <td>Matemática</td>
+                    <td><input type="number" class="Mat-P" min="0" max="4" step=".5"></td>
+                    <td><input type="number" class="Mat-N" min="0" max="1000"></td>
+                </tr>
+                <tr>
+                    <td>Redação</td>
+                    <td><input type="number" class="Red-P" min="0" max="4" step=".5"></td>
+                    <td><input type="number" class="Red-N" min="0" max="1000"></td>
+                </tr>
+            </table>
+            <button class="calculate" onclick="calculate()">Calcular</button>
+            <h2 class="result"></h2>
+            <img class="character-2" src="./svg/professora.svg" alt="professora">
         </div>
     </main>
-    <img class="character" src="./svg/professor.svg" alt="imagem professor">
+
+
     <script src="./scripts/script.js"></script>
 </body>
 </html>
