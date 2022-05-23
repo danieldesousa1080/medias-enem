@@ -31,7 +31,7 @@ function calculate(){
     let TotalWeights = 0
     for (item in noteWeight){
         TotalNotes += document.querySelector(noteWeight[item]).value * document.querySelector(noteValue[item]).value
-        TotalWeights += parseInt(document.querySelector(noteWeight[item]).value)
+        TotalWeights += parseFloat(document.querySelector(noteWeight[item]).value)
     }
     result.innerHTML = "Sua nota é " + (TotalNotes/TotalWeights).toFixed(2)
 }
