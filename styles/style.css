@@ -125,3 +125,8 @@ main {
     top: 40%;
     left: 2%;
 }
+
+td input {
+    text-align: center;
+    
+}
