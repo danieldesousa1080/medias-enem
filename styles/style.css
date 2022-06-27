@@ -96,12 +96,29 @@ main {
     }
 }
 
+.fade-in {
+  animation: fadein .9s ease;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  90% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%
+  }
+}
+
 .form {
-    margin: auto;
     display: none;
+    opacity: 0%;
+    margin: auto;
     flex-direction: column;
     text-align: center;
-    /* justify-content: space-around; */
     height: 50%;
     width: 100%;
     align-items: center;
@@ -128,5 +145,5 @@ main {
 
 td input {
     text-align: center;
-    
+
 }

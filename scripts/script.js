@@ -11,10 +11,11 @@ let result = document.querySelector('.result')
 startButton.addEventListener("click",()=>{
     body.style.backgroundColor = '#F7BF42'
     main.style.backgroundColor ='#DE8327'
-    // firstScreen.style.display = 'none'
     firstScreen.classList.add('fade-out')
-    disappear(firstScreen)
     form.style.display = 'flex'
+    form.classList.add('fade-in')
+    disappear(firstScreen)
+    appear(form)
 })
 
 function disappear (x) {
@@ -23,7 +24,16 @@ function disappear (x) {
             x.style.display = "none"
         };
     },false
-    )  
+    )
+}
+
+function appear (x) {
+    x.addEventListener("animationend",(ev)=>{
+        if (ev.type === "animationend"){
+            x.style.opacity = '100%'
+        };
+    },false
+    )
 }
 
 function calculate(){
@@ -35,3 +45,4 @@ function calculate(){
     }
     result.innerHTML = "Sua nota é " + (TotalNotes/TotalWeights).toFixed(2)
 }
+  
