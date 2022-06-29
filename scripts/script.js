@@ -43,6 +43,6 @@ function calculate(){
         TotalNotes += document.querySelector(noteWeight[item]).value * document.querySelector(noteValue[item]).value
         TotalWeights += parseFloat(document.querySelector(noteWeight[item]).value)
     }
-    result.innerHTML = "Sua nota é " + (TotalNotes/TotalWeights).toFixed(2)
+    result.innerHTML = "Sua média foi de " + (TotalNotes/TotalWeights).toFixed(2) + "!"
 }
   

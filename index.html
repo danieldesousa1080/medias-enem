@@ -7,6 +7,7 @@
     <title>Calculadora Enem</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/responsivity.css">
 </head>
 <body>
     <main>
@@ -18,7 +19,7 @@
                     <h1>Clique no botão abaixo para começar!</h1>
                 </div>
                 <button class="btn-start">Calcular minha nota</button>
-                <a href="#"><img class="link" src="./svg/github_icon.svg" alt="link github"></a>
+                <a href="https://github.com/danieldesousa1080"><img class="link" src="./svg/github_icon.svg" alt="link github"></a>
             </div>
             <img class="character" src="./svg/professor.svg" alt="imagem professor">
         </div>
@@ -26,34 +27,32 @@
         <div class="form">
             <table>
                 <tr class="header">
-                    <td>Area de conhecimento</td>
-                    <td>Peso</td>
-                    <td>Nota</td>
+                    <td><h2>Áreas de conhecimento</h2></td>
                 </tr>
                 <tr>
-                    <td>Códigos e Linguagens</td>
-                    <td><input type="number" class="Ling-P" min="0" value="1" max="4" step=".5"></td>
-                    <td><input type="number" class="Ling-N" min="0" max="1000"></td>
+                    <td><h3>Códigos e Linguagens</h3></td>
+                    <td><p>Peso</p><input type="number" class="Ling-P" min="0" value="1" max="4" step=".5"></td>
+                    <td><p>Nota</p><input type="number" class="Ling-N" min="0" max="1000"></td>
                 </tr>
                 <tr>
-                    <td>Ciências Humanas</td>
-                    <td><input type="number" class="Hum-P"  min="0" value="1" max="4" step=".5"></td>
-                    <td><input type="number" class="Hum-N"  min="0" max="1000"></td>
+                    <td><h3>Ciências Humanas</h3></td>
+                    <td><p>Peso</p><input type="number" class="Hum-P"  min="0" value="1" max="4" step=".5"></td>
+                    <td><p>Nota</p><input type="number" class="Hum-N"  min="0" max="1000"></td>
                 </tr>
                 <tr>
-                    <td>Ciências da Natureza</td>
-                    <td><input type="number" class="Nat-P" min="0" value="1" max="4" step=".5"></td>
-                    <td><input type="number" class="Nat-N" min="0" max="1000"></td>
+                    <td><h3>Ciências da Natureza</h3></td>
+                    <td><p>Peso</p><input type="number" class="Nat-P" min="0" value="1" max="4" step=".5"></td>
+                    <td><p>Nota</p><input type="number" class="Nat-N" min="0" max="1000"></td>
                 </tr>
                 <tr>
-                    <td>Matemática</td>
-                    <td><input type="number" class="Mat-P" min="0" value="1" max="4" step=".5"></td>
-                    <td><input type="number" class="Mat-N" min="0" max="1000"></td>
+                    <td><h3>Matemática</h3></td>
+                    <td><p>Peso</p><input type="number" class="Mat-P" min="0" value="1" max="4" step=".5"></td>
+                    <td><p>Nota</p><input type="number" class="Mat-N" min="0" max="1000"></td>
                 </tr>
                 <tr>
-                    <td>Redação</td>
-                    <td><input type="number" class="Red-P" min="0" value="1" max="4" step=".5"></td>
-                    <td><input type="number" class="Red-N" min="0" max="1000"></td>
+                    <td><h3>Redação</h3></td>
+                    <td><p>Peso</p><input type="number" class="Red-P" min="0" value="1" max="4" step=".5"></td>
+                    <td><p>Nota</p><input type="number" class="Red-N" min="0" max="1000"></td>
                 </tr>
             </table>
             <button class="calculate" onclick="calculate()">Calcular</button>
